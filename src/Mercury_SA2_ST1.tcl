@@ -414,6 +414,104 @@ set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FMC_CLK1_M2C_N
 set_location_assignment PIN_H15                    -to FMC_CLK1_M2C_P
 set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FMC_CLK1_M2C_P
 
+# FX3
+set_location_assignment PIN_AA13                   -to FX3_AD[0]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_AD[0]
+set_location_assignment PIN_AD14                   -to FX3_AD[1]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_AD[1]
+set_location_assignment PIN_AF11                   -to FX3_CLK
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_CLK
+set_location_assignment PIN_AK7                    -to FX3_DQ[0]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[0]
+set_location_assignment PIN_AJ6                    -to FX3_DQ[1]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[1]
+set_location_assignment PIN_AK13                   -to FX3_DQ[2]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[2]
+set_location_assignment PIN_AJ7                    -to FX3_DQ[3]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[3]
+set_location_assignment PIN_AK12                   -to FX3_DQ[4]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[4]
+set_location_assignment PIN_AK14                   -to FX3_DQ[5]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[5]
+set_location_assignment PIN_AH7                    -to FX3_DQ[6]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[6]
+set_location_assignment PIN_AH10                   -to FX3_DQ[7]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[7]
+set_location_assignment PIN_AK8                    -to FX3_DQ[8]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[8]
+set_location_assignment PIN_AJ9                    -to FX3_DQ[9]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[9]
+set_location_assignment PIN_AH8                    -to FX3_DQ[10]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[10]
+set_location_assignment PIN_AJ10                   -to FX3_DQ[11]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[11]
+set_location_assignment PIN_AK9                    -to FX3_DQ[12]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[12]
+set_location_assignment PIN_AK11                   -to FX3_DQ[13]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[13]
+set_location_assignment PIN_AF14                   -to FX3_DQ[14]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[14]
+set_location_assignment PIN_AJ11                   -to FX3_DQ[15]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[15]
+set_location_assignment PIN_AG15                   -to FX3_DQ[16]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[16]
+set_location_assignment PIN_AH13                   -to FX3_DQ[17]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[17]
+set_location_assignment PIN_AG13                   -to FX3_DQ[18]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[18]
+set_location_assignment PIN_AG12                   -to FX3_DQ[19]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[19]
+set_location_assignment PIN_AH12                   -to FX3_DQ[20]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[20]
+set_location_assignment PIN_AF15                   -to FX3_DQ[21]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[21]
+set_location_assignment PIN_AB15                   -to FX3_DQ[22]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[22]
+set_location_assignment PIN_AC14                   -to FX3_DQ[23]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[23]
+set_location_assignment PIN_AJ12                   -to FX3_DQ[24]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[24]
+set_location_assignment PIN_AA14                   -to FX3_DQ[25]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[25]
+set_location_assignment PIN_AA15                   -to FX3_DQ[26]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[26]
+set_location_assignment PIN_AH15                   -to FX3_DQ[27]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[27]
+set_location_assignment PIN_AJ14                   -to FX3_DQ[28]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[28]
+set_location_assignment PIN_Y16                    -to FX3_DQ[29]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[29]
+set_location_assignment PIN_W15                    -to FX3_DQ[30]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[30]
+set_location_assignment PIN_AH14                   -to FX3_DQ[31]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_DQ[31]
+set_location_assignment PIN_AJ4                    -to FX3_INT_N_LED_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_INT_N_LED_N
+set_location_assignment PIN_AK6                    -to FX3_FLAGA
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_FLAGA
+set_location_assignment PIN_AE13                   -to FX3_FLAGB
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_FLAGB
+set_location_assignment PIN_AG10                   -to FX3_GPIO[0]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_GPIO[0]
+set_location_assignment PIN_AE14                   -to FX3_GPIO[1]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_GPIO[1]
+set_location_assignment PIN_AF13                   -to FX3_GPIO[2]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_GPIO[2]
+set_location_assignment PIN_AB13                   -to FX3_GPIO[3]
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_GPIO[3]
+set_location_assignment PIN_AJ5                    -to FX3_SLCS_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_SLCS_N
+set_location_assignment PIN_AK4                    -to FX3_SLOE_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_SLOE_N
+set_location_assignment PIN_AG11                   -to FX3_SLRD_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_SLRD_N
+set_location_assignment PIN_AH9                    -to FX3_SLWR_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_SLWR_N
+set_location_assignment PIN_AK2                    -to FX3_RESET_N_LS
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_RESET_N_LS
+set_location_assignment PIN_AK3                    -to FX3_PKTEND_N
+set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to FX3_PKTEND_N
+
 # HDMI
 set_location_assignment PIN_AD30                   -to HDMI_HPD
 set_instance_assignment -name IO_STANDARD  "3.3-V LVCMOS" -to HDMI_HPD

@@ -294,6 +294,21 @@ entity Mercury_SA2_ST1 is
     FMC_CLK1_M2C_N                   : inout   std_logic;
     FMC_CLK1_M2C_P                   : inout   std_logic;
     
+    -- FX3
+    FX3_CLK                          : out     std_logic;
+    FX3_INT_N_LED_N                  : in      std_logic;
+    FX3_FLAGA                        : in      std_logic;
+    FX3_FLAGB                        : in      std_logic;
+    FX3_SLCS_N                       : out     std_logic;
+    FX3_SLOE_N                       : out     std_logic;
+    FX3_SLRD_N                       : out     std_logic;
+    FX3_SLWR_N                       : out     std_logic;
+    FX3_RESET_N_LS                   : out     std_logic;
+    FX3_PKTEND_N                     : out     std_logic;
+    FX3_AD                           : out     std_logic_vector(1 downto 0);
+    FX3_DQ                           : inout   std_logic_vector(31 downto 0);
+    FX3_GPIO                         : inout   std_logic_vector(3 downto 0);
+    
     -- HDMI
     HDMI_HPD                         : in      std_logic;
     HDMI_CLK_N                       : out     std_logic;

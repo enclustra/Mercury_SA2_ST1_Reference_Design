@@ -64,7 +64,11 @@ set_instance_parameter_value hps_0 {QSPI_PinMuxing} {HPS I/O Set 1}
 set_instance_parameter_value hps_0 {REF_CLK_FREQ} {50.0}
 set_instance_parameter_value hps_0 {S2FCLK_USER0CLK_Enable} {1}
 set_instance_parameter_value hps_0 {S2FCLK_USER1CLK_Enable} {1}
-set_instance_parameter_value hps_0 {S2FCLK_USER1CLK_FREQ} {50.0}
+set_instance_parameter_value hps_0 {S2FCLK_USER1CLK_FREQ} {25.0}
+set_instance_parameter_value hps_0 {S2FCLK_USER1CLK_FREQ} {25.0}
+set_instance_parameter_value hps_0 {S2FCLK_USER2CLK} {15}
+set_instance_parameter_value hps_0 {S2FCLK_USER2CLK_Enable} {1}
+set_instance_parameter_value hps_0 {S2FCLK_USER2CLK_FREQ} {100.0}
 set_instance_parameter_value hps_0 {SDIO_Mode} {4-bit Data}
 set_instance_parameter_value hps_0 {SDIO_PinMuxing} {HPS I/O Set 0}
 set_instance_parameter_value hps_0 {TIMING_BOARD_AC_SKEW} {0.1}
@@ -212,7 +216,7 @@ if { ${dual_fast_ethernet} == "DFE" } {
     set_connection_parameter_value hps_0.h2f_lw_axi_master/fast_ethernet_0.msgdma_tx_0_descriptor_slave baseAddress {0x0020}
     set_connection_parameter_value hps_0.h2f_lw_axi_master/fast_ethernet_0.msgdma_tx_0_descriptor_slave defaultConnection {0}
 
-    add_connection hps_0.h2f_user1_clock fast_ethernet_0.clk_tse_0_clk_in
+    add_connection hps_0.h2f_user2_clock fast_ethernet_0.clk_tse_0_clk_in
     add_connection hps_0.h2f_reset fast_ethernet_0.clk_tse_0_clk_in_reset
 
     # fast_ethernet_1
@@ -262,7 +266,7 @@ if { ${dual_fast_ethernet} == "DFE" } {
     set_connection_parameter_value hps_0.h2f_lw_axi_master/fast_ethernet_1.msgdma_tx_0_descriptor_slave baseAddress {0x00a0}
     set_connection_parameter_value hps_0.h2f_lw_axi_master/fast_ethernet_1.msgdma_tx_0_descriptor_slave defaultConnection {0}
 
-    add_connection hps_0.h2f_user1_clock fast_ethernet_1.clk_tse_0_clk_in
+    add_connection hps_0.h2f_user2_clock fast_ethernet_1.clk_tse_0_clk_in
     add_connection hps_0.h2f_reset fast_ethernet_1.clk_tse_0_clk_in_reset
 
 }
@@ -283,14 +287,14 @@ add_connection hps_0.h2f_reset clk_25M.clk_in_reset
 add_connection hps_0.h2f_reset onchip_memory2_0.reset1
 add_connection hps_0.h2f_reset sysid_qsys_0.reset
 
-add_connection hps_0.h2f_user0_clock hps_0.f2h_sdram0_clock
 add_connection hps_0.h2f_user0_clock hps_0.h2f_axi_clock
 add_connection hps_0.h2f_user0_clock clk_100M.clk_in
 add_connection hps_0.h2f_user0_clock onchip_memory2_0.clk1
-add_connection hps_0.h2f_user1_clock clk_50M.clk_in
-add_connection hps_0.h2f_user1_clock hps_0.h2f_lw_axi_clock
-add_connection hps_0.h2f_user1_clock sysid_qsys_0.clk
 add_connection hps_0.h2f_user1_clock clk_25M.clk_in
+add_connection hps_0.h2f_user2_clock hps_0.h2f_lw_axi_clock
+add_connection hps_0.h2f_user2_clock hps_0.f2h_sdram0_clock
+add_connection hps_0.h2f_user2_clock sysid_qsys_0.clk
+add_connection hps_0.h2f_user2_clock clk_50M.clk_in
 
 # interconnect requirements
 set_interconnect_requirement {$system} {qsys_mm.clockCrossingAdapter} {AUTO}

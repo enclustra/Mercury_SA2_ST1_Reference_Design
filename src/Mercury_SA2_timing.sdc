@@ -23,8 +23,8 @@ set_input_delay -max 30 -clock [get_clocks Eth1A_Rx] [get_ports {ETH1A_RXD[0] ET
 set_input_delay -min 10 -clock [get_clocks Eth1A_Rx] [get_ports {ETH1A_RXD[0] ETH1A_RXD[1] ETH1A_RXD[2] ETH1A_RXD[3] ETH1A_RXDV ETH1A_RXER ETH1A_COL ETH1A_CRS}] -add_delay
 
 # mii transmit timing
-set_output_delay -max 10 -clock [get_clocks Eth1A_Tx] [get_ports {ETH1A_TXD[0] ETH1A_TXD[1] ETH1A_TXD[2] ETH1A_TXD[3] ETH1A_TXEN ETH1A_COL ETH1A_CRS}] -add_delay
-set_output_delay -min 0  -clock [get_clocks Eth1A_Tx] [get_ports {ETH1A_TXD[0] ETH1A_TXD[1] ETH1A_TXD[2] ETH1A_TXD[3] ETH1A_TXEN ETH1A_COL ETH1A_CRS}] -add_delay
+set_output_delay -max 10 -clock [get_clocks Eth1A_Tx] [get_ports {ETH1A_TXD[0] ETH1A_TXD[1] ETH1A_TXD[2] ETH1A_TXD[3] ETH1A_TXEN}] -add_delay
+set_output_delay -min 0  -clock [get_clocks Eth1A_Tx] [get_ports {ETH1A_TXD[0] ETH1A_TXD[1] ETH1A_TXD[2] ETH1A_TXD[3] ETH1A_TXEN}] -add_delay
 
 #--------------------------------------------------------------------------------------------------
 # PL ETH B
@@ -34,8 +34,8 @@ set_input_delay -max 30 -clock [get_clocks Eth1B_Rx] [get_ports {ETH1B_RXD[0] ET
 set_input_delay -min 10 -clock [get_clocks Eth1B_Rx] [get_ports {ETH1B_RXD[0] ETH1B_RXD[1] ETH1B_RXD[2] ETH1B_RXD[3] ETH1B_RXDV ETH1B_RXER ETH1B_COL ETH1B_CRS}] -add_delay
 
 # mii transmit timing
-set_output_delay -max 10 -clock [get_clocks Eth1B_Tx] [get_ports {ETH1B_TXD[0] ETH1B_TXD[1] ETH1B_TXD[2] ETH1B_TXD[3] ETH1B_TXEN ETH1B_COL ETH1B_CRS}] -add_delay
-set_output_delay -min 0  -clock [get_clocks Eth1B_Tx] [get_ports {ETH1B_TXD[0] ETH1B_TXD[1] ETH1B_TXD[2] ETH1B_TXD[3] ETH1B_TXEN ETH1B_COL ETH1B_CRS}] -add_delay
+set_output_delay -max 10 -clock [get_clocks Eth1B_Tx] [get_ports {ETH1B_TXD[0] ETH1B_TXD[1] ETH1B_TXD[2] ETH1B_TXD[3] ETH1B_TXEN}] -add_delay
+set_output_delay -min 0  -clock [get_clocks Eth1B_Tx] [get_ports {ETH1B_TXD[0] ETH1B_TXD[1] ETH1B_TXD[2] ETH1B_TXD[3] ETH1B_TXEN}] -add_delay
 
 #--------------------------------------------------------------------------------------------------
 # create unused clock constraint for HPS I2C and usb1 to avoid misleading unconstrained clock reporting in TimeQuest
